@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cá»­a hÃ ng Vá»¯a Victory</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>ðŸ—ï¸ Cá»­a hÃ ng Vá»¯a Victory</h1>
+        <p>Vá»¯a, keo vÃ  phá»¥ kiá»‡n xÃ¢y dá»±ng cháº¥t lÆ°á»£ng cao</p>
+        <button id="cartToggle" class="cart-toggle" aria-label="Má»Ÿ giá» hÃ ng">ðŸ›’ Giá» hÃ ng (<span id="cartCount">0</span>)</button>
+    </header>
+
+    <main>
+        <section id="products" class="grid"></section>
+        <p id="no-data" class="hidden">Hiá»‡n chÆ°a cÃ³ sáº£n pháº©m nÃ o.</p>
+    </main>
+
+    <!-- Giá» hÃ ng overlay -->
+    <div id="cartOverlay" class="overlay hidden" aria-modal="true" role="dialog">
+        <div class="overlay-content">
+            <h2>Giá» hÃ ng</h2>
+            <ul id="cartItems" class="cart-items"></ul>
+            <p class="total">Tá»•ng cá»™ng: <strong id="cartTotal">0â€¯VND</strong></p>
+            <button id="checkoutBtn" class="checkout-btn">Thanh toÃ¡n</button>
+            <button id="closeCart" class="close-btn">âœ–ï¸ ÄÃ³ng</button>
+        </div>
+    </div>
+
+    <!-- Chatbox overlay -->
+    <button id="chatBtn" class="chat-btn" aria-label="Má»Ÿ há»™p chat AI">ðŸ’¬</button>
+    <div id="chatOverlay" class="overlay hidden" role="dialog" aria-modal="true">
+        <div class="overlay-content">
+            <h2>Chat AI</h2>
+            <div id="chatLog" class="chat-log" aria-live="polite"></div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Nháº­p cÃ¢u há»i..." aria-label="Tin nháº¯n" />
+                <button id="sendBtn" class="send-btn">Gá»­i</button>
+                <button id="closeChat" class="close-btn" aria-label="ÄÃ³ng chat">âœ–ï¸</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
